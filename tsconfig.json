@@ -3,10 +3,12 @@
     "target": "es2020",
     "module": "es2020",
     "allowJs": true,
+    "declaration": true,
     "outDir": "lib",
     "allowSyntheticDefaultImports": true,
-    "lib": ["dom", "WebWorker", "es2020"],
-    "types": []
+    "lib": ["dom", "WebWorker", "es2020", "ES6"],
+    "types": [],
+    "esModuleInterop": true
   },
   "include": ["src/**/*"],
   "exclude": [
