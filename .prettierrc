@@ -1,0 +1,12 @@
+{
+  "svelteSortOrder": "options-scripts-markup-styles",
+  "svelteStrictMode": true,
+  "svelteBracketNewLine": false,
+  "svelteAllowShorthand": false,
+  "svelteIndentScriptAndStyle": true,
+  "printWidth": 120,
+  "semi": true,
+  "tabWidth": 4,
+  "endOfLine": "lf",
+  "trailingComma": "es5"
+}
