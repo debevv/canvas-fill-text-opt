@@ -33,7 +33,7 @@ self.onmessage = async function (messageEvent) {
             ctx.textAlign = op.textAlign;
             ctx.textBaseline = op.textBaseline;
 
-            fillTextImpl(ctx, op.text, op.x, op.y, op.maxWidth, op.clip, op.textLimitFactor);
+            fillTextOptImpl(ctx, op.text, op.x, op.y, op.maxWidth, op.clip, op.textLimitFactor);
         }
 
         let image = canvas.transferToImageBitmap();

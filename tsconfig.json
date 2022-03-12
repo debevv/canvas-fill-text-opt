@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "ES2020",
-    "outDir": "./dist",
+    "declaration": true,
+    "outDir": "lib",
     "lib": ["DOM", "WebWorker", "ES2020"]
   },
   "include": ["src/**/*"]

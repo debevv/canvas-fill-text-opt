@@ -1,4 +1,4 @@
-import fillTextImpl from "./fillTextOptImpl";
+import fillTextOptImpl from "./fillTextOptImpl";
 
 export class Rect {
     x: number;
@@ -92,7 +92,7 @@ export default class FillTextOpt {
             this.workersIdx = (this.workersIdx + 1) % this.workers.length;
         } else {
             maxWidth = maxWidth == null ? undefined : maxWidth;
-            fillTextImpl(this.ctx, text, x, y, maxWidth, clip, this.S.textLimitFactor);
+            fillTextOptImpl(this.ctx, text, x, y, maxWidth, clip, this.S.textLimitFactor);
         }
     }
 
@@ -156,7 +156,7 @@ class FTOWorker {
 
     async init(id: number, fonts: FFFont[]): Promise<void> {
         this.id = id;
-        this.worker = new Worker(new URL("./fastFillTextWorker.js", import.meta.url));
+        this.worker = new Worker(new URL("./fillTextOptWorker.js", import.meta.url));
         this.operations = [];
 
         return new Promise((resolve, _reject) => {
