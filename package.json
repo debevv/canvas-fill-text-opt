@@ -1,11 +1,14 @@
 {
     "name": "canvas-fill-text-opt",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "HTML canvas.fillText() performance optimizations attempts",
     "main": "src/index.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Valerio De Benedetto (@debevv)",
-    "license": "GPL-2.0-only"
+    "license": "GPL-2.0-only",
+    "devDependencies": {
+        "typescript": "^4.6.2"
+    }
 }
