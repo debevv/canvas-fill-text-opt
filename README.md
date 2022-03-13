@@ -9,12 +9,6 @@ It was born out of the frustration of discovering that a desktop 16-core system,
 npm install canvas-fill-text-opt
 ```
 
-or
-
-```
-npm install https://github.com/debevv/canvas-fill-text-opt
-```
-
 ## Usage
 
 ```ts
