@@ -4,11 +4,11 @@
     "module": "es2020",
     "allowJs": true,
     "declaration": true,
-    "outDir": "lib",
     "allowSyntheticDefaultImports": true,
-    "lib": ["dom", "WebWorker", "es2020", "ES6"],
+    "esModuleInterop": true,
+    "lib": ["dom", "ES6"],
     "types": [],
-    "esModuleInterop": true
+    "outDir": "lib"
   },
   "include": ["src/**/*"],
   "exclude": [
